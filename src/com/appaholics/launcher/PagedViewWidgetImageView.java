@@ -19,7 +19,6 @@ package com.appaholics.launcher;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import com.appaholics.launcher.R;
 
 
 

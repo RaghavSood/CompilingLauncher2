@@ -20,7 +20,6 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import com.appaholics.launcher.R;
 
 public class HolographicImageView extends ImageView {
 

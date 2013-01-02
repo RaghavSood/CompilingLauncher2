@@ -23,7 +23,6 @@ import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import com.appaholics.launcher.R;
 
 class FastBitmapDrawable extends Drawable {
     private Bitmap mBitmap;

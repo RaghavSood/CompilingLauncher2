@@ -20,7 +20,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import com.appaholics.launcher.R;
 
 
 /* Class that does most of the work of enabling dragging items out of a PagedView by performing a

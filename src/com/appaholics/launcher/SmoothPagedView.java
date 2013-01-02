@@ -20,7 +20,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
-import com.appaholics.launcher.R;
 
 public abstract class SmoothPagedView extends PagedView {
     private static final float SMOOTHING_SPEED = 0.75f;

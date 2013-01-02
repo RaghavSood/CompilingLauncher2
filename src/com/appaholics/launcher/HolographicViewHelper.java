@@ -23,7 +23,6 @@ import android.graphics.Canvas;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.StateListDrawable;
 import android.widget.ImageView;
-import com.appaholics.launcher.R;
 
 public class HolographicViewHelper {
 

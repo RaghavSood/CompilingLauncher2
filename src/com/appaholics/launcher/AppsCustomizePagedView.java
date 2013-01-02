@@ -16,6 +16,11 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -32,11 +37,9 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
-import android.graphics.MaskFilter;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
-//import android.graphics.TableMaskFilter;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Process;
@@ -47,7 +50,6 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -55,13 +57,7 @@ import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.DropTarget.DragObject;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 
 /**
  * A simple callback interface which also provides the results of the task.
@@ -886,7 +882,8 @@ public class AppsCustomizePagedView extends PagedViewWithDraggableItems implemen
     /**
      * Creates and executes a new AsyncTask to load the outlines for a page of content.
      */
-    private void prepareGenerateHoloOutlinesTask(int page, ArrayList<Object> items,
+    @SuppressWarnings("unused")
+	private void prepareGenerateHoloOutlinesTask(int page, ArrayList<Object> items,
             ArrayList<Bitmap> images) {
         // Prune old tasks for this page
         Iterator<AppsCustomizeAsyncTask> iter = mRunningTasks.iterator();

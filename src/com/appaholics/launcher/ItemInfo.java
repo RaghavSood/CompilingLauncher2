@@ -22,7 +22,6 @@ import java.io.IOException;
 import android.content.ContentValues;
 import android.graphics.Bitmap;
 import android.util.Log;
-import com.appaholics.launcher.R;
 
 /**
  * Represents an item in the launcher.

@@ -25,8 +25,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.appaholics.launcher.R;
-
 public class Hotseat extends FrameLayout {
     private static final String TAG = "Hotseat";
     private static final int sAllAppsButtonRank = 2; // In the middle of the dock

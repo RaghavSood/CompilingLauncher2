@@ -16,7 +16,6 @@
 
 package com.appaholics.launcher;
 
-import com.appaholics.launcher.R;
 
 /**
  * Handles scrolling while dragging

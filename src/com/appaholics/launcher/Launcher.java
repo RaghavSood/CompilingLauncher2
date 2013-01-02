@@ -99,7 +99,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.DropTarget.DragObject;
 
 /**

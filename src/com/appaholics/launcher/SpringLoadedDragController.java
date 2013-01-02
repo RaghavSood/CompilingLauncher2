@@ -16,7 +16,6 @@
 
 package com.appaholics.launcher;
 
-import com.appaholics.launcher.R;
 
 public class SpringLoadedDragController implements OnAlarmListener {
     // how long the user must hover over a mini-screen before it unshrinks

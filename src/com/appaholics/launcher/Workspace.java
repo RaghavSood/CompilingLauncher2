@@ -67,7 +67,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.FolderIcon.FolderRingAnimator;
 import com.appaholics.launcher.InstallWidgetReceiver.WidgetMimeTypeHandlerData;
 
@@ -79,7 +78,6 @@ import com.appaholics.launcher.InstallWidgetReceiver.WidgetMimeTypeHandlerData;
 public class Workspace extends SmoothPagedView
         implements DropTarget, DragSource, DragScroller, View.OnTouchListener,
         DragController.DragListener, ViewGroup.OnHierarchyChangeListener {
-    @SuppressWarnings({"UnusedDeclaration"})
     private static final String TAG = "Launcher.Workspace";
 
     // Y rotation to apply to the workspace screens

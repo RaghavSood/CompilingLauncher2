@@ -17,7 +17,6 @@
 package com.appaholics.launcher;
 
 import android.os.Handler;
-import com.appaholics.launcher.R;
 
 public class Alarm implements Runnable{
     // if we reach this time and the alarm hasn't been cancelled, call the listener

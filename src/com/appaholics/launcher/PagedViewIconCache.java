@@ -26,7 +26,6 @@ import android.content.ComponentName;
 import android.content.pm.ComponentInfo;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
-import com.appaholics.launcher.R;
 
 /**
  * Simple cache mechanism for PagedView outlines.

@@ -33,8 +33,6 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import com.appaholics.launcher.R;
-
 
 /**
  * We will likely flesh this out later, to handle allow external apps to place widgets, but for now,

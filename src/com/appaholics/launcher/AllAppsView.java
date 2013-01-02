@@ -16,7 +16,6 @@
 
 package com.appaholics.launcher;
 
-import com.appaholics.launcher.R;
 import java.util.ArrayList;
 
 public interface AllAppsView {

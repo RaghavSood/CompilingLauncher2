@@ -17,15 +17,12 @@
 
 package com.appaholics.launcher;
 
-import android.widget.ImageView;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.KeyEvent;
 import android.view.View;
-
-import com.appaholics.launcher.R;
+import android.widget.ImageView;
 
 public class HandleView extends ImageView {
     private static final int ORIENTATION_HORIZONTAL = 1;

@@ -16,6 +16,9 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -23,10 +26,6 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.util.Log;
-import com.appaholics.launcher.R;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Represents an app in AllAppsView.

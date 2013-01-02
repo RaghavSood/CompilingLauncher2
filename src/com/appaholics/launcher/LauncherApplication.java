@@ -16,6 +16,8 @@
 
 package com.appaholics.launcher;
 
+import java.lang.ref.WeakReference;
+
 import android.app.Application;
 import android.app.SearchManager;
 import android.content.ContentResolver;
@@ -25,9 +27,6 @@ import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.database.ContentObserver;
 import android.os.Handler;
-import com.appaholics.launcher.R;
-
-import java.lang.ref.WeakReference;
 
 public class LauncherApplication extends Application {
     public LauncherModel mModel;

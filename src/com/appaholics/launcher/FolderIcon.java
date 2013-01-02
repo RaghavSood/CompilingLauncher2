@@ -16,6 +16,8 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -38,11 +40,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.DropTarget.DragObject;
 import com.appaholics.launcher.FolderInfo.FolderListener;
-
-import java.util.ArrayList;
 
 /**
  * An icon that can appear on in the workspace representing an {@link UserFolder}.
@@ -110,12 +109,6 @@ public class FolderIcon extends LinearLayout implements FolderListener {
 
     static FolderIcon fromXml(int resId, Launcher launcher, ViewGroup group,
             FolderInfo folderInfo, IconCache iconCache) {
-
-        if (INITIAL_ITEM_ANIMATION_DURATION >= DROP_IN_ANIMATION_DURATION) {
-            throw new IllegalStateException("DROP_IN_ANIMATION_DURATION must be greater than " +
-                    "INITIAL_ITEM_ANIMATION_DURATION, as sequencing of adding first two items " +
-                    "is dependent on this");
-        }
 
         FolderIcon icon = (FolderIcon) LayoutInflater.from(launcher).inflate(resId, group, false);
 

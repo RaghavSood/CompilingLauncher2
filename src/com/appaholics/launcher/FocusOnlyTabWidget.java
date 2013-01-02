@@ -20,7 +20,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TabWidget;
-import com.appaholics.launcher.R;
 
 public class FocusOnlyTabWidget extends TabWidget {
     public FocusOnlyTabWidget(Context context) {

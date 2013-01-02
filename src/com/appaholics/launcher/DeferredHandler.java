@@ -22,7 +22,6 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.os.MessageQueue;
-import com.appaholics.launcher.R;
 
 /**
  * Queue of things to run on a looper thread.  Items posted with {@link #post} will not

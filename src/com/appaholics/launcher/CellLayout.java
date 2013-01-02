@@ -16,6 +16,10 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
@@ -38,7 +42,6 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewDebug;
@@ -47,12 +50,7 @@ import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LayoutAnimationController;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.FolderIcon.FolderRingAnimator;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 
 public class CellLayout extends ViewGroup {
     static final String TAG = "CellLayout";
@@ -223,11 +221,6 @@ public class CellLayout extends ViewGroup {
                     // If an animation is started and then stopped very quickly, we can still
                     // get spurious updates we've cleared the tag. Guard against this.
                     if (outline == null) {
-                        if (false) {
-                            Object val = animation.getAnimatedValue();
-                            Log.d(TAG, "anim " + thisIndex + " update: " + val +
-                                     ", isStopped " + anim.isStopped());
-                        }
                         // Try to prevent it from continuing to run
                         animation.cancel();
                     } else {

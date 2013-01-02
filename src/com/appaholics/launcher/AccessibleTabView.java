@@ -20,7 +20,6 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 import android.widget.TextView;
-import com.appaholics.launcher.R;
 
 /**
  * We use a custom tab view to process our own focus traversals.

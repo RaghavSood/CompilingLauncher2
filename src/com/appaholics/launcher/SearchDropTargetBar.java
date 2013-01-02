@@ -29,8 +29,6 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 
-import com.appaholics.launcher.R;
-
 /*
  * Ths bar will manage the transition between the QSB search bar and the delete drop
  * targets so that each of the individual IconDropTargets don't have to.

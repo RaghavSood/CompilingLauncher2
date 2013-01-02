@@ -16,6 +16,8 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Point;
@@ -30,15 +32,10 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.inputmethod.InputMethodManager;
 
-import com.appaholics.launcher.R;
-
-import java.util.ArrayList;
-
 /**
  * Class for initiating a drag within a view or across multiple views.
  */
 public class DragController {
-    @SuppressWarnings({"UnusedDeclaration"})
     private static final String TAG = "Launcher.DragController";
 
     /** Indicates the drag is a move.  */
@@ -348,7 +345,6 @@ public class DragController {
      *              || super.dispatchKeyEvent(event);
      * </pre>
      */
-    @SuppressWarnings({"UnusedDeclaration"})
     public boolean dispatchKeyEvent(KeyEvent event) {
         return mDragging;
     }
@@ -414,10 +410,6 @@ public class DragController {
      * Call this from a drag source view.
      */
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        if (false) {
-            Log.d(Launcher.TAG, "DragController.onInterceptTouchEvent " + ev + " mDragging="
-                    + mDragging);
-        }
         final int action = ev.getAction();
 
         final int[] dragLayerPos = getClampedDragLayerPos(ev.getX(), ev.getY());

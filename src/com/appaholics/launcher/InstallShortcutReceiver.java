@@ -23,8 +23,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
 
-import com.appaholics.launcher.R;
-
 public class InstallShortcutReceiver extends BroadcastReceiver {
 	/*
     public static final String ACTION_INSTALL_SHORTCUT =

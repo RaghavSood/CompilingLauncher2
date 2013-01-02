@@ -21,7 +21,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.GridLayout;
-import com.appaholics.launcher.R;
 
 /**
  * The grid based layout used strictly for the widget/wallpaper tab of the AppsCustomize pane

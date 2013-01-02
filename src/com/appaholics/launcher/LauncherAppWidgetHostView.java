@@ -24,8 +24,6 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
-import com.appaholics.launcher.R;
-
 /**
  * {@inheritDoc}
  */

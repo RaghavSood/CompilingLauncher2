@@ -19,7 +19,6 @@ package com.appaholics.launcher;
 import android.appwidget.AppWidgetHostView;
 import android.content.ComponentName;
 import android.content.ContentValues;
-import com.appaholics.launcher.R;
 
 /**
  * Represents a widget (either instantiated or about to be) in the Launcher.

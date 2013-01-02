@@ -16,6 +16,8 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+
 import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorListenerAdapter;
@@ -45,10 +47,6 @@ import android.view.animation.Interpolator;
 import android.widget.Checkable;
 import android.widget.ImageView;
 import android.widget.Scroller;
-
-import com.appaholics.launcher.R;
-
-import java.util.ArrayList;
 
 /**
  * An abstraction of the original Workspace which supports browsing through a

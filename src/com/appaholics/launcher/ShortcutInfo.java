@@ -23,7 +23,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.util.Log;
-import com.appaholics.launcher.R;
 
 /**
  * Represents a launchable icon on the workspaces and in folders.

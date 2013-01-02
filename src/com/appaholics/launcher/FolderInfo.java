@@ -19,7 +19,6 @@ package com.appaholics.launcher;
 import java.util.ArrayList;
 
 import android.content.ContentValues;
-import com.appaholics.launcher.R;
 
 /**
  * Represents a folder containing shortcuts or apps.

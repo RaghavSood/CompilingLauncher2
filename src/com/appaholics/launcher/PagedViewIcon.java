@@ -26,8 +26,6 @@ import android.util.AttributeSet;
 import android.widget.Checkable;
 import android.widget.TextView;
 
-import com.appaholics.launcher.R;
-
 
 /**
  * An icon on a PagedView, specifically for items in the launcher's paged view (with compound

@@ -16,6 +16,10 @@
 
 package com.appaholics.launcher;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
 import android.content.res.Configuration;
 import android.view.KeyEvent;
 import android.view.View;
@@ -23,12 +27,6 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.TabHost;
 import android.widget.TabWidget;
-
-import com.appaholics.launcher.R;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 /**
  * A keyboard listener we set on all the workspace icons.

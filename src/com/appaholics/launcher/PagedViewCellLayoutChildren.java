@@ -20,7 +20,6 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewGroup;
-import com.appaholics.launcher.R;
 
 /**
  * An abstraction of the original CellLayout which supports laying out items

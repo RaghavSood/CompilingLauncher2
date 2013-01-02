@@ -29,8 +29,6 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 
-import com.appaholics.launcher.R;
-
 public class DragView extends View {
     private Bitmap mBitmap;
     private Paint mPaint;
@@ -157,14 +155,6 @@ public class DragView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        if (false) {
-            // for debugging
-            Paint p = new Paint();
-            p.setStyle(Paint.Style.FILL);
-            p.setColor(0xaaffffff);
-            canvas.drawRect(0, 0, getWidth(), getHeight(), p);
-        }
-
         mHasDrawn = true;
         canvas.drawBitmap(mBitmap, 0.0f, 0.0f, mPaint);
     }

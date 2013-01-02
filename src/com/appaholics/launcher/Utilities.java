@@ -29,13 +29,10 @@ import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
-//import android.graphics.TableMaskFilter;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PaintDrawable;
 import android.util.DisplayMetrics;
-
-import com.appaholics.launcher.R;
 
 /**
  * Various utilities shared amongst the Launcher's classes.
@@ -142,15 +139,6 @@ final class Utilities {
 
             final int left = (textureWidth-width) / 2;
             final int top = (textureHeight-height) / 2;
-
-            if (false) {
-                // draw a big box for the icon for debugging
-                canvas.drawColor(sColors[sColorIndex]);
-                if (++sColorIndex >= sColors.length) sColorIndex = 0;
-                Paint debugPaint = new Paint();
-                debugPaint.setColor(0xffcccc00);
-                canvas.drawRect(left, top, left+width, top+height, debugPaint);
-            }
 
             sOldBounds.set(icon.getBounds());
             icon.setBounds(left, top, left+width, top+height);

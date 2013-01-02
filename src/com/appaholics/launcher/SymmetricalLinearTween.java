@@ -18,7 +18,6 @@ package com.appaholics.launcher;
 
 import android.os.Handler;
 import android.os.SystemClock;
-import com.appaholics.launcher.R;
 
 /**
  * Provides an animation between 0.0f and 1.0f over a given duration.

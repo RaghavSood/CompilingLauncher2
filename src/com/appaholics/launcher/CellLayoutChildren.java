@@ -21,7 +21,6 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewGroup;
-import com.appaholics.launcher.R;
 
 public class CellLayoutChildren extends ViewGroup {
     static final String TAG = "CellLayoutChildren";

@@ -19,7 +19,6 @@ package com.appaholics.launcher;
 import android.appwidget.AppWidgetProviderInfo;
 import android.content.ComponentName;
 import android.os.Parcelable;
-import com.appaholics.launcher.R;
 
 /**
  * We pass this object with a drag from the customization tray

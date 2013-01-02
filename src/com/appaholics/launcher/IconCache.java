@@ -16,6 +16,8 @@
 
 package com.appaholics.launcher;
 
+import java.util.HashMap;
+
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -25,9 +27,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
-import com.appaholics.launcher.R;
-
-import java.util.HashMap;
 
 /**
  * Cache of application icons.  Icons can be made from any thread.

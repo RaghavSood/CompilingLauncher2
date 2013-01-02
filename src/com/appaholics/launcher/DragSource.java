@@ -18,7 +18,6 @@ package com.appaholics.launcher;
 
 import android.view.View;
 
-import com.appaholics.launcher.R;
 import com.appaholics.launcher.DropTarget.DragObject;
 
 /**

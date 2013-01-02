@@ -18,7 +18,6 @@ package com.appaholics.launcher;
 
 import android.net.Uri;
 import android.provider.BaseColumns;
-import com.appaholics.launcher.R;
 
 /**
  * Settings related utilities.

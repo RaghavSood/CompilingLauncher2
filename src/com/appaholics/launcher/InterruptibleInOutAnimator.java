@@ -19,7 +19,6 @@ package com.appaholics.launcher;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
-import com.appaholics.launcher.R;
 
 /**
  * A convenience class for two-way animations, e.g. a fadeIn/fadeOut animation.

@@ -16,8 +16,6 @@
 
 package com.appaholics.launcher;
 
-import com.appaholics.launcher.R;
-
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.Fragment;

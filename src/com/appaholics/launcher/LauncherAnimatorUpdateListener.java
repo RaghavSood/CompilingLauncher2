@@ -18,7 +18,6 @@ package com.appaholics.launcher;
 
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
-import com.appaholics.launcher.R;
 
 abstract class LauncherAnimatorUpdateListener implements AnimatorUpdateListener {
     public void onAnimationUpdate(ValueAnimator animation) {

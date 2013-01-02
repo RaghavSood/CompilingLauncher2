@@ -17,7 +17,6 @@
 package com.appaholics.launcher;
 
 import android.graphics.Rect;
-import com.appaholics.launcher.R;
 
 /**
  * Interface defining an object that can receive a drag.

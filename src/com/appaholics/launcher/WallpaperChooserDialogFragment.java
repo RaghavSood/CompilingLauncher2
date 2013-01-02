@@ -15,6 +15,9 @@
  */
 package com.appaholics.launcher;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -40,11 +43,6 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.SpinnerAdapter;
-
-import com.appaholics.launcher.R;
-
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class WallpaperChooserDialogFragment extends DialogFragment implements
         AdapterView.OnItemSelectedListener, AdapterView.OnItemClickListener {
