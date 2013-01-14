@@ -17,36 +17,39 @@
 ** limitations under the License.
 */
 -->
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.appaholics.launcher" >
 
     <original-package android:name="com.appaholics.launcher" />
 
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
     <permission
         android:name="com.android.launcher.permission.INSTALL_SHORTCUT"
-        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
-        android:protectionLevel="normal"
+        android:description="@string/permdesc_install_shortcut"
         android:label="@string/permlab_install_shortcut"
-        android:description="@string/permdesc_install_shortcut" />
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="normal" />
     <permission
         android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"
-        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
-        android:protectionLevel="normal"
+        android:description="@string/permdesc_uninstall_shortcut"
         android:label="@string/permlab_uninstall_shortcut"
-        android:description="@string/permdesc_uninstall_shortcut"/>
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="normal" />
     <permission
         android:name="com.android.launcher.permission.READ_SETTINGS"
-        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
-        android:protectionLevel="normal"
+        android:description="@string/permdesc_read_settings"
         android:label="@string/permlab_read_settings"
-        android:description="@string/permdesc_read_settings"/>
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="normal" />
     <permission
         android:name="com.android.launcher.permission.WRITE_SETTINGS"
-        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
-        android:protectionLevel="normal"
+        android:description="@string/permdesc_write_settings"
         android:label="@string/permlab_write_settings"
-        android:description="@string/permdesc_write_settings"/>
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="normal" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
@@ -58,46 +61,50 @@
 
     <application
         android:name="com.appaholics.launcher.LauncherApplication"
-        android:label="@string/application_name"
-        android:icon="@drawable/ic_launcher_home"
         android:hardwareAccelerated="@bool/config_hardwareAccelerated"
+        android:icon="@drawable/ic_launcher_home"
+        android:label="@string/application_name"
         android:largeHeap="@bool/config_largeHeap" >
         <activity
             android:name="com.appaholics.launcher.Launcher"
-            android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
             android:stateNotNeeded="true"
             android:theme="@style/Theme"
-            android:windowSoftInputMode="adjustPan"
-            android:screenOrientation="nosensor">
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.HOME" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.MONKEY"/>
+                <category android:name="android.intent.category.MONKEY" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.appaholics.launcher.WallpaperChooser"
             style="@style/Theme.WallpaperPicker"
-            android:label="@string/pick_wallpaper"
-            android:icon="@drawable/ic_launcher_wallpaper"
             android:finishOnCloseSystemDialogs="true"
-            android:process=":wallpaper_chooser">
+            android:icon="@drawable/ic_launcher_wallpaper"
+            android:label="@string/pick_wallpaper"
+            android:process=":wallpaper_chooser" >
             <intent-filter>
                 <action android:name="android.intent.action.SET_WALLPAPER" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <meta-data android:name="android.wallpaper.preview"
+
+            <meta-data
+                android:name="android.wallpaper.preview"
                 android:resource="@xml/wallpaper_picker_preview" />
         </activity>
-
-        <activity android:name="com.appaholics.launcher.RocketLauncher"
+        <activity
+            android:name="com.appaholics.launcher.RocketLauncher"
             android:label="@string/dream_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.DREAM" />
             </intent-filter>
         </activity>
@@ -105,17 +112,16 @@
         <!-- Intent received used to install shortcuts from other applications -->
         <receiver
             android:name="com.appaholics.launcher.InstallShortcutReceiver"
-            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+            android:permission="com.android.launcher.permission.INSTALL_SHORTCUT" >
             <intent-filter>
                 <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
             </intent-filter>
-
         </receiver>
 
         <!-- Intent received used to uninstall shortcuts from other applications -->
         <receiver
             android:name="com.appaholics.launcher.UninstallShortcutReceiver"
-            android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT"  >          
+            android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT" >
             <intent-filter>
                 <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
             </intent-filter>
@@ -125,8 +131,8 @@
         <provider
             android:name="com.appaholics.launcher.LauncherProvider"
             android:authorities="com.appaholics.launcher.settings"
-            android:writePermission="com.android.launcher.permission.WRITE_SETTINGS"
-            android:readPermission="com.android.launcher.permission.READ_SETTINGS" />
-
+            android:readPermission="com.android.launcher.permission.READ_SETTINGS"
+            android:writePermission="com.android.launcher.permission.WRITE_SETTINGS" />
     </application>
+
 </manifest>
